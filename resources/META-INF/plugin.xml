@@ -1,0 +1,56 @@
+<idea-plugin>
+  <id>com.github.code.generator.id</id>
+  <name>CodeGenerator</name>
+  <version>1.0.0</version>
+  <vendor email="504401503@qq.com" url="https://github.com/">GITHUB</vendor>
+
+  <description>
+    <![CDATA[
+      Generate Template Code.
+      <p>Like These:
+        <ul>
+          <li>Enums Info Code</li>
+          <li>Framework Reference Annotation Auto Generate And Import</li>
+          <li>Etc..</li>
+        </ul>
+      </p>
+    ]]>
+  </description>
+
+  <change-notes>
+    <![CDATA[
+      History:
+      <p>First Version:
+        <ul>
+          <li>time:2022-12-10</li>
+          <li>Author:CoffeeEngineer</li>
+        </ul>
+      </p>
+    ]]>
+  </change-notes>
+
+  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+  <depends>com.intellij.modules.lang</depends>
+  <depends>com.intellij.modules.java</depends>
+
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+
+    <action id="com.github.action.enums.AutoGenEnumInfoId" class="com.github.action.enums.AutoGenEnumInfo"
+            text="AutoGenEnumInfo" description="Auto Gen Enum Info Code">
+      <add-to-group group-id="GenerateGroup" anchor="first"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl alt G"/>
+    </action>
+  </actions>
+
+</idea-plugin>

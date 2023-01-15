@@ -34,4 +34,12 @@ public class ReceiveGenEnumInfoDto {
         this.enumCode = enumCode;
         return this;
     }
+
+    @Override
+    public String toString() {
+        return "ReceiveGenEnumInfoDto{" +
+                "enumInfoString='" + enumInfoString + '\'' +
+                ", enumCode='" + enumCode + '\'' +
+                '}';
+    }
 }

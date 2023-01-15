@@ -46,8 +46,8 @@
   <actions>
     <!-- Add your actions here -->
 
-    <action id="com.github.action.enums.AutoGenEnumInfoId" class="com.github.action.enums.AutoGenEnumInfo"
-            text="AutoGenEnumInfo" description="Auto Gen Enum Info Code">
+    <action id="com.github.action.enums.AutoGenEnumInfoId" class="com.github.action.enums.AutoGenEnumInfoAction"
+            text="AutoGenEnumInfo" description="Auto Generator Enum Info Code">
       <add-to-group group-id="GenerateGroup" anchor="first"/>
       <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl alt G"/>
     </action>
